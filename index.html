@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://wallpapers.com/images/high/hd-abstract-neon-5a4r2p0t39b24klg.webp") no-repeat center center fixed;
+            background-size: cover;
+            opacity: 1;
+            filter: brightness(40%);
+            z-index: -1;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 15px;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: rgba(255,255,255,0.7);
+            color: black;
+        }
+
+        h2, p {
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Foto Profil -->
+    <img src="profil.jpeg" alt="Foto Profil" class="profile-img"><br><br>
+
+    <!-- Identitas -->
+    <h2>Nouvail Bravislampa</h2>
+    <p>102022400303 | Fakultas Teknologi Informasi | Sistem Informasi</p>
+
+    <!-- Sosial Media -->
+    <div class="social-icons">
+        <a href="https://github.com/drcadis" target="_blank">GitHub</a>
+        <a href="https://instagram.com/username" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+    </div>
+
+    <p style="color:white; text-shadow:1px 1px 3px black;">
+        Akun sosial media saya. Klik ikon untuk membuka di tab baru.
+    </p>
+</body>
+</html>
